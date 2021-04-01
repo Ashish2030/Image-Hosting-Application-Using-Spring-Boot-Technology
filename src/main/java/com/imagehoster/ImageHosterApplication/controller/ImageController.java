@@ -16,14 +16,15 @@ public class ImageController
 {
     @Autowired
     private ImageService image;
-    @RequestMapping(value="/print_page")
+    @RequestMapping(method = RequestMethod.GET, value = "print_page")
     public String getUserPost(Model model,HttpSession session)
     {
         User user=(User)session.getAttribute("LoggedUser");
         List <Image> image1 = image.getAllPost(user);
         model.addAttribute("images", image1);
-        return "/Print/print";
+        return "Print/print";
     }
+
 
     @RequestMapping(value="/")
     public String temp()
@@ -49,7 +50,7 @@ public class ImageController
     {
         Image image1=image.getImage(postId);
         model.addAttribute("post",image1);
-        return "/Edit_page/edit_page";
+        return "Edit_Page/edit_page";
     }
     @RequestMapping(method = RequestMethod.PUT, value = "/editpost_successful")
     public String editPostSubmit(@RequestParam (name="postId" ) Integer postId ,@RequestParam ("file") MultipartFile file,Image updateImgData,HttpSession session)
