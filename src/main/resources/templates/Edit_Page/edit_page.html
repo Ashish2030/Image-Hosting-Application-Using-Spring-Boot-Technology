@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link th:rel="stylesheet" th:href="@{/css/edit_pagestyle.css}">
+    <title> 𝐈𝐦𝐚𝐠𝐞 𝐇𝐨𝐬𝐭𝐞𝐫 </title>
+    <link rel="shortcut icon" th:href="@{/image/icon.png}">
+</head>
+<main>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#"><div><img th:src="@{/image/pic3.png}" class="img"></div></a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a th:href="@{/print_page}"><span>Preview</span> &ensp;&ensp;</a></li>
+                    <li><a th:href="@{/users/logout}"><span>LogOut</span> &ensp;&ensp;</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</main>
+<body th:style="'background-image:url(' + @{/image/im.jpg} + '); background-repeat: no-repeat, repeat; background-size: cover;'">
+<section>
+
+    <div class="panda">
+        <div class="ear"></div>
+        <div class="face">
+            <div class="eye-shade"></div>
+            <div class="eye-white">
+                <div class="eye-ball"></div>
+            </div>
+            <div class="eye-shade rgt"></div>
+            <div class="eye-white rgt">
+                <div class="eye-ball"></div>
+            </div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+        </div>
+        <div class="body"> </div>
+        <div class="foot">
+            <div class="finger"></div>
+        </div>
+        <div class="foot rgt">
+            <div class="finger"></div>
+        </div>
+    </div>
+    <form th:method="put" th:object="${post}" th:action="@{/editpost_successful(postId=${post.id})}" enctype="multipart/form-data">
+
+    <div class="hand"></div>
+    <div class="hand rgt"></div>
+    <center><h1 >Edit</h1></center>
+
+    <div class="form-group">
+        <input type="text" id="title" required="required" class="form-control" name="title" autocomplete="off"  th:value="${post.title}" />
+        <label for="title" class="form-label"style="font-weight:normal">Image Title:   </label>
+    </div>
+
+    <div class="form-group">
+        <input type="text" id="tags" required="required" class="form-control" name="tags" autocomplete="off" th:value="${post.tags}" />
+        <label for="tags" class="form-label" style="font-weight:normal">Tag:    </label>
+    </div>
+
+    <div class="form-group">
+        <input id="Description" required="required" class="form-control" name="description" autocomplete="off" th:value="${post.description}"/>
+        <label for="Description" class="form-label" style="font-weight:normal">Description: </label>
+    </div>
+
+    <div class="form-group">
+        <label for="image" class="form-label" style="font-weight:normal">Select Image:</label>&ensp;
+        <input onchange="ValidateSize(this)" type="file" id="image"   name="file"  class="form-control" required="required" accept=".jpg,.jpeg,.png" autocomplete="off"/>
+    </div>
+    <p class="alert" id="che">Invalid Input</p>
+    <button class="btn">Update</button>
+    </form>
+    <script >
+    function ValidateSize(file) {
+        var FileSize = file.files[0].size / 1024 / 1024; // in MiB
+        if (FileSize > 8) {
+               document.getElementById("che").innerHTML="File size exceeds 2 MiB";
+                 $('form').addClass('wrong-entry');
+    setTimeout(function(){
+       $('form').removeClass('wrong-entry');
+     },3000 );
+             document.getElementById('image').value= null;
+        } else
+        {
+  document.getElementById("che").innerHTML="Updated Successfully";
+        }
+    }
+  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script  th:src="@{/js/edit_pagescript.js}"></script>
+</section>
+
+</body>
+</html>

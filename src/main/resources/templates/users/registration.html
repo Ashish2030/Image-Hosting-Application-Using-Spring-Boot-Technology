@@ -1,0 +1,100 @@
+<!Doctype html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <style>
+        hr.style-three {
+            height: 30px;
+            border-style: solid;
+            border-color: black;
+            border-width: 1px 0 0 0;
+            border-radius: 20px;
+        }
+        hr.style-three:before {
+            display: block;
+            content: "";
+            height: 30px;
+            margin-top: -31px;
+            border-style: solid;
+            border-color: black;
+            border-width: 0 0 1px 0;
+            border-radius: 20px;
+        }
+        body
+        {
+            margin-top: 30px;
+        }
+        .u
+        {
+            padding-top: 10px;
+            padding-right: 200px;
+            padding-bottom: 10px;
+            padding-left: 70px;
+            font-family: 'Flavors', cursive;
+            /*font-weight: 50px;*/
+            display:inline;
+            font-size: 30px;
+        }
+        .a
+        {
+            padding-top: 10px;
+            padding-right: 140px;
+            padding-bottom: 10px;
+            padding-left: 200px;
+            text-align: center;
+            font-size: 68px;
+            font-family: 'Flavors', cursive;
+            /*font-weight: 30px;*/
+            display:inline;
+            /*float:center;*/
+        }
+        .b
+        {
+            font-size: 50px;
+            padding: 12px;
+            font-size: 28px;
+            display:inline;
+            font-family: 'Flavors', cursive;
+        }
+        main{
+
+            margin-top: 60px;
+            margin-left:20px;
+        }
+        form{
+            font-size:30px;
+            font-width:30px;
+        }
+        #form
+        {
+            text-align:center;
+        }
+    </style>
+    <title>Signup- Image Hoster</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Flavors&display=swap" rel="stylesheet">
+</head>
+<body>
+<p class ="u">Upload Image</p>
+<p class="a" >Please Register</p>
+<p class="b">Ashish Arya</p>
+<p class="b" >Login</p>
+<p class="b" >Signup</p>
+<hr class="style-three">
+<main>
+    <form id="form" method="post" th:object="${user}" th:action="@{/users/registration}">
+        <label for="username">Username:&nbsp;</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="username"  name="username" style="height:30px; width:200px;" th:field="${user.username}" /><br><br>
+        <label for="password">Password:&nbsp;</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" id="password" name="password"style="height:30px; width:200px;" th:field="${user.password}" /><br><br>
+        <label for="fullname">Full Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="fullname" name="fullName" style="height:30px; width:200px;" th:field="${user.userProfile.fullName}"  /><br><br>
+        <label for="Email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" id="Email" name="Email" style="height:30px; width:200px;"   th:field="${user.userProfile.email}" /><br><br>
+        <label for="number">Mobile No:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="tel" id="number" name="number" style="height:30px; width:200px;" th:field="${user.userProfile.mobileNumber}"  /><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" value="Register" style="height:30px; width:80px;"  />
+    </form>
+</main>
+</body>
+</html>

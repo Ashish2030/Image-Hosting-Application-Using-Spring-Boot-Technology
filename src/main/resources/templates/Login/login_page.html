@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link th:rel="stylesheet" th:href="@{/css/panda.css}">
+    <title> 𝐈𝐦𝐚𝐠𝐞 𝐇𝐨𝐬𝐭𝐞𝐫 </title>
+    <link rel="shortcut icon" th:href="@{/image/icon.png}">
+</head>
+<main>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a th:href="@{/}"><div><img th:src="@{/image/pic3.png}" class="img"></div></a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a th:href="@{/users/signup}"><span>SignUp</span> &ensp;&ensp;</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</main>
+<body th:style="'background-image:url(' + @{/image/im.jpg} + '); background-repeat: no-repeat, repeat; background-size: cover;'">
+<section>
+    <div class="panda">
+        <div class="ear"></div>
+        <div class="face">
+            <div class="eye-shade"></div>
+            <div class="eye-white">
+                <div class="eye-ball"></div>
+            </div>
+            <div class="eye-shade rgt"></div>
+            <div class="eye-white rgt">
+                <div class="eye-ball"></div>
+            </div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+        </div>
+        <div class="body"> </div>
+        <div class="foot">
+            <div class="finger"></div>
+        </div>
+        <div class="foot rgt">
+            <div class="finger"></div>
+        </div>
+    </div>
+    <form autocomplete="off" method="post" th:object="${user}" th:action="@{/login_success} " >
+        <div class="hand"></div>
+        <div class="hand rgt"></div>
+        <h1>Login</h1>
+        <div class="form-group">
+            <input id="username"required="required" class="form-control"  name="username"/>
+            <label  for="username" class="form-label" style="font-weight:normal">Username    </label>
+        </div>
+        <div class="form-group">
+            <input id="password" type="password" required="required" class="form-control"  name="password" />
+            <label for="password" class="form-label" style="font-weight:normal" >Password</label>
+            <p class="alert" id="che">Welcome to Image Hosting !!</p>
+            <button class="btn">Login </button>
+        </div>
+    </form>
+    <div th:switch="${message}">
+        <div th:case="'Success'" class="alert alert-success">
+            <strong>Success!</strong> Operation performed successfully.
+        </div>
+        <div th:case="'Failed'" class="alert alert-danger">
+            <strong>Failure!</strong> Operation failed. Please try again
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script  th:src="@{/js/login1.js}"></script>
+</section>
+</body>
+</html>

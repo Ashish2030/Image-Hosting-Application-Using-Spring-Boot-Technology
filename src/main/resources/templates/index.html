@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link th:rel="stylesheet" th:href="@{/css/index_style.css}">
+    <title> 𝐈𝐦𝐚𝐠𝐞 𝐇𝐨𝐬𝐭𝐞𝐫 </title>
+    <link rel="shortcut icon" th:href="@{/image/icon.png}">
+
+</head>
+<main>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div><img th:src="@{/image/pic3.png}" class="img"></div>
+            </div>
+
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a th:href="@{/users/login}"><span class="link">Login</span> &ensp;&ensp;</a></li>
+                    <li><a th:href="@{/users/signup}"><span class="link">SignUp</span> &ensp;&ensp;</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</main>
+<body >
+
+
+<div class="bgContainer" id="bgContainer" >
+    <img th:src="@{/image/important.jpg}"  alt="Background Cover Image" class="bgImage">
+
+</div>
+<br>
+
+<!-- Cards -->
+<h1 class="link" style="text-align:center; font-size:30px">About Us</h1>
+<br>
+<div class="flipCardContainer" id="flipCardContainer">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img th:src="@{/image/arun_sir.png}"   alt="Avatar" class="avtarImg img">
+            </div>
+            <div class="flip-card-back" id="card1">
+                <h1>𝐀𝐫𝐮𝐧 𝐊𝐮𝐝𝐢𝐲𝐚𝐥</h1>
+                <br>
+                <p><span style="font-size:20px;">𝐀𝐁𝐎𝐔𝐓 &ensp; :</span> 𝐒𝐮𝐛𝐣𝐞𝐜𝐭 𝐌𝐚𝐭𝐭𝐞𝐫 𝐄𝐱𝐩𝐞𝐫𝐭|𝐀𝐩𝐩𝐥𝐞 𝐈𝐧𝐜.|𝐓𝐞𝐜𝐡. 𝐄𝐧𝐭𝐡𝐮𝐬𝐢𝐚𝐬𝐭|𝐓𝐞𝐜𝐡𝐧𝐢𝐜𝐚𝐥 𝐈𝐧𝐬𝐭𝐫𝐮𝐜𝐭𝐨𝐫|𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐨𝐧𝐚𝐥𝐢𝐬𝐭|𝐌𝐞𝐧𝐭𝐨𝐫|𝐅𝐫𝐢𝐞𝐧𝐝</p>
+                <br><br><br>
+                <p><span style="font-size:20px;">𝐑𝐎𝐋𝐄 &ensp; :</span>&ensp;ᴍᴇɴᴛᴏʀ(ᴜᴘɢʀᴀᴅ) &ensp; &ensp;<a th:href="@{https://www.linkedin.com/in/arun-kudiyal-107752116/}" style="color:white;" >Linkdin Profile</a></p>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card" >
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img th:src="@{/image/rahul.png}"  alt="Avatar" class="avtarImg img"  >
+            </div>
+            <div class="flip-card-back"  id="card3"  style="color:white;">
+                <h1>𝐑𝐚𝐡𝐮𝐥 𝐊𝐮𝐦𝐚𝐫</h1>
+                <br>
+                <p><span style="font-size:18px;">𝐀𝐁𝐎𝐔𝐓:&ensp;</span>𝐒𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫 𝐚𝐭 𝐕𝐞𝐥𝐨𝐭𝐢𝐨 𝐓𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞𝐬</p>
+                <br><br><br>
+                <p class="line"><span style="font-size:18px;">𝐑𝐎𝐋𝐄:&ensp;</span>𝐔𝐩𝐠𝐫𝐚𝐝(𝐌𝐞𝐧𝐭𝐨𝐫):&ensp; &ensp; &ensp; <a class="line" th:href="@{https://www.linkedin.com/in/rahul10-pu/}"  style="color:white;" >Linkdin Profile</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img th:src="@{/image/n.png}"  alt="Avatar" class="avtarImg img" >
+            </div>
+            <div class="flip-card-back"  id="card4">
+                <h1>𝐍𝐢𝐭𝐢𝐤𝐚 𝐒𝐡𝐚𝐫𝐦𝐚</h1>
+                <br>
+                <p> <span style="font-size:18px;">𝐀𝐁𝐎𝐔𝐓:&ensp;</span>𝐏𝐫𝐨𝐠𝐫𝐚𝐦 𝐀𝐬𝐬𝐨𝐜𝐢𝐚𝐭𝐞 𝐚𝐭 𝐮𝐩𝐆𝐫𝐚𝐝;</p>
+                <br><br><br>
+                <p><span style="font-size:18px;">𝐑𝐎𝐋𝐄:&ensp;&ensp;</span>𝐔𝐩𝐠𝐫𝐚𝐝(𝐏𝐫𝐨𝐠𝐫𝐚𝐦 𝐀𝐬𝐬𝐨𝐜𝐢𝐚𝐭𝐞) <a th:href="@{https://www.linkedin.com/in/nitikasharma1610/}"style="color:white;">Linkdin Profile</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img th:src="@{/image/Ashish.png}"  alt="Avatar" class="avtarImg img">
+            </div>
+            <div class="flip-card-back"  id="card2">
+                <h1>𝐀𝐬𝐡𝐢𝐬𝐡 𝐊𝐮𝐦𝐚𝐫</h1>
+                <br>
+                <p><span style="font-size:18px;">𝐀𝐁𝐎𝐔𝐓:&ensp;</span> &ensp; 𝐅𝐮𝐥𝐥 𝐒𝐭𝐚𝐜𝐤 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫||⭐⭐⭐⭐⭐ 𝐚𝐭 𝐇𝐚𝐜𝐤𝐞𝐫𝐫𝐚𝐧𝐤||⭐⭐ 𝐚𝐭 𝐂𝐨𝐝𝐞𝐂𝐡𝐞𝐟||𝐌𝐞𝐧𝐭𝐨𝐫 𝐚𝐭 𝐆𝐢𝐫𝐥𝐒𝐜𝐫𝐢𝐩𝐭 𝐒𝐮𝐦𝐦𝐞𝐫 𝐨𝐟 𝐂𝐨𝐝𝐞||𝐁𝐚𝐜𝐤-𝐞𝐧𝐝 𝐥𝐨𝐯𝐞𝐫 </p>
+                <br><br><br>
+                <p><span style="font-size:18px;">𝐑𝐎𝐋𝐄:&ensp;</span> ᴘʀᴏᴊᴇᴄᴛ ᴀᴅᴍɪɴ  &ensp; &ensp; &ensp;<a th:href="@{https://www.linkedin.com/in/ashish-kumar-2030/}"  style="color:white;" >Linkdin Profile</a></p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
+
+
+<!--Footer -->
+<div class="footerContainer" id="footerContainer">
+    <footer style="font-family: 'Dancing Script', cursive;">
+        <p>Image Hosting <br>
+            <span>&copy;2021 By Ashish Arya</span>
+        </p>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script th:src="@{/js/index_script.js}"></script>
+</body>
+</html>

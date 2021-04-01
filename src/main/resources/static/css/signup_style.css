@@ -1,0 +1,468 @@
+section {
+  margin-top: 100px;
+}
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+span {
+  color: #eb9e34;
+  font-family: 'Dancing Script', cursive;
+  font-size:25px;
+}
+.img
+{
+  width:90%;
+  padding: 0;
+  margin: 0;
+  vertical-align:top;
+}
+.navbar {
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+}
+.navbar-default .navbar-brand {
+  margin-top: 10px;
+  color: black;
+}
+.navbar-default .navbar-brand:hover {
+  color: black;
+  border: 1px solid #C57ED3;
+}
+.navbar-default .navbar-nav > li > a {
+  color: black;
+  margin: 10px 5px 5px 5px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+  color: #C57ED3;
+  border: 1px solid #C57ED3;
+}
+.navbar-default .navbar-nav > li > a:visited {
+  color: #C57ED3;
+  text-decoration: none;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  color: #C57ED3;
+}
+.navbar-default .navbar-toggle {
+  border-color: #C57ED3;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #490D40;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  color: #C57ED3;
+  background-color: #C57ED3;
+}
+.navbar-default .navbar-collapse.collapse.in ul {
+  background-color: #490D40;
+}
+
+/* Solid class attached on scroll past first section */
+.navbar.solid {
+  background-color: #490D40;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+}
+.navbar.solid .navbar-brand {
+  color: #C57ED3;
+  transition: color 1s ease 0s;
+}
+.navbar.solid .navbar-nav > li > a {
+  color: #C57ED3;
+  transition: color 1s ease 0s;
+}
+
+.about {
+  background-color: #C57ED3;
+  color: #490D40;
+  height: 600px;
+  text-align: center;
+  margin-top: -20px;
+}
+.about h2 {
+  padding-top: 220px;
+}
+.about p {
+  padding: 20px 80px;
+}
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script|Roboto);
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+h1 {
+  margin-top: 0 ;
+  margin-bottom: 0;
+}
+
+body {
+  background-color:#01002a;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.panda {
+  position: relative;
+  width: 200px;
+  margin: 50px auto;
+}
+.a
+{
+  margin:0px;
+}
+.face {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border-radius: 100%;
+  margin: 50px auto;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+  z-index: 50;
+  position: relative;
+}
+.ear, .ear:after {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #000;
+  z-index: 5;
+  border: 10px solid #fff;
+  left: -15px;
+  top: -15px;
+  border-radius: 100%;
+}
+.ear:after {
+  content: '';
+  left: 125px;
+}
+.eye-shade {
+  background: #000;
+  width: 50px;
+  height: 80px;
+  margin: 10px;
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  transform: rotate(220deg);
+  border-radius: 25px/20px 30px 35px 40px;
+}
+.eye-shade.rgt {
+  transform: rotate(140deg);
+  left: 105px;
+}
+
+.eye-white {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #fff;
+  z-index: 500;
+  left: 40px;
+  top: 80px;
+  overflow: hidden;
+}
+.eye-white.rgt {
+  right: 40px;
+  left: auto;
+}
+
+.eye-ball {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 20px;
+  top: 20px;
+  max-width: 10px;
+  max-height: 10px;
+  transition: 0.1s;
+}
+.eye-ball:after {
+  content: '';
+  background: #000;
+  position: absolute;
+  border-radius: 100%;
+  right: 0;
+  bottom: 0px;
+  width: 20px;
+  height: 20px;
+}
+
+.nose {
+  position: absolute;
+  height: 20px;
+  width: 35px;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50px 20px/30px 15px;
+  transform: rotate(15deg);
+  background: #000;
+}
+
+.body {
+  background: #fff;
+  position: absolute;
+  top: 200px;
+  left: -20px;
+  border-radius: 100px 100px 100px 100px/126px 126px 96px 96px;
+  width: 265px;
+  height: 288px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hand, .hand:after, .hand:before {
+  width: 40px;
+  height: 30px;
+  border-radius: 50px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  background: #000;
+  margin: 5px;
+  position: absolute;
+  top: 70px;
+  left: -25px;
+}
+.hand:after, .hand:before {
+  content: '';
+  left: -5px;
+  top: 11px;
+}
+.hand:before {
+  top: 26px;
+}
+.hand.rgt, .rgt.hand:after, .rgt.hand:before {
+  left: auto;
+  right: -25px;
+}
+.hand.rgt:after, .hand.rgt:before {
+  left: auto;
+  right: -5px;
+}
+
+.foot {
+  top: 400px;
+  left: -100px;
+  position: absolute;
+  background: #000;
+  z-index: 1400;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 40px 40px 39px 40px/26px 26px 63px 63px;
+  width: 80px;
+  height: 110px;
+}
+.foot:after {
+  content: '';
+  width: 52px;
+  height: 62px;
+  background: #222;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.foot .finger, .foot .finger:after, .foot .finger:before {
+  position: absolute;
+  width: 22px;
+  height: 32px;
+  background: #222;
+  border-radius: 100%;
+  top: 5px;
+  right: 5px;
+}
+.foot .finger:after, .foot .finger:before {
+  content: '';
+  right: 30px;
+  width: 20px;
+  top: 0;
+}
+.foot .finger:before {
+  right: 55px;
+  top: 5px;
+}
+.foot.rgt {
+  left: auto;
+  right: -100px;
+}
+.foot.rgt .finger, .foot.rgt .finger:after, .foot.rgt .finger:before {
+  left: 5px;
+  right: auto;
+}
+.foot.rgt .finger:after {
+  left: 30px;
+  right: auto;
+}
+.foot.rgt .finger:before {
+  left: 55px;
+  right: auto;
+}
+
+form {
+  display: none;
+  max-width: 350px;
+  padding: 10px 40px;
+  background: #fff;
+  height: 307px;
+  margin: auto;
+  display: block;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+  position: relative;
+  transform: translateY(-100px);
+  z-index: 500;
+  border: 1px solid #eee;
+}
+form.up {
+  transform: translateY(-167px);
+}
+
+h1 {
+  color: #FF4081;
+  font-family: 'Dancing Script', cursive;
+}
+
+.btn {
+  background: #fff;
+  padding: 3px;
+  width: 140px;
+  height: 33px;
+  border: 1px solid #FF4081;
+  margin-top: -13px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 50px #FF4081 inset;
+  color: #fff;
+}
+.btn:hover {
+  box-shadow: 0 0 #FF4081 inset;
+  color: #FF4081;
+}
+.btn:focus {
+  outline: none;
+}
+
+.form-group {
+  position: relative;
+  font-size: 15px;
+  color: #666;
+}
+.form-group + .form-group {
+  margin-top: 10px;
+}
+.form-group .form-label {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 2px;
+  transition: 0.3s;
+}
+.form-group .form-control {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  height: 35px;
+  background: none;
+  border: none;
+  padding: 1px 0;
+  transition: 0.3s;
+  border-bottom: 1px solid #777;
+  color: #555;
+}
+.form-group .form-control:invalid {
+  outline: none;
+}
+.form-group .form-control:focus, .form-group .form-control:valid {
+  outline: none;
+  box-shadow: 0 1px #FF4081;
+  border-color: #FF4081;
+}
+.form-group .form-control:focus + .form-label, .form-group .form-control:valid + .form-label {
+  font-size: 12px;
+  color: #FF4081;
+  transform: translateY(-11px);
+}
+
+.alert {
+  position: absolute;
+  color: #f00;
+  font-size: 16px;
+  right: -80px;
+  top: -150px;
+  z-index: 200;
+  padding: 30px 25px;
+  background: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0, 0);
+  -moz-transition: linear 0.4s 0.6s;
+  -o-transition: linear 0.4s 0.6s;
+  -webkit-transition: linear 0.4s;
+  -webkit-transition-delay: 0.6s;
+  transition: linear 0.4s 0.6s;
+}
+.alert:after, .alert:before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  left: -19px;
+  bottom: -8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+.alert:before {
+  width: 15px;
+  height: 15px;
+  left: -35px;
+  bottom: -25px;
+}
+
+.wrong-entry {
+  -webkit-animation: wrong-log 0.3s;
+  animation: wrong-log 0.3s;
+}
+.wrong-entry .alert {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+@-webkit-keyframes eye-blink {
+  to {
+    height: 30px;
+  }
+}
+@keyframes eye-blink {
+  to {
+    height: 30px;
+  }
+}
+@-webkit-keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 20px;
+  }
+  40% , 80% {
+    left: -20px;
+  }
+}
+@keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 20px;
+  }
+  40% , 80% {
+    left: -20px;
+  }
+}

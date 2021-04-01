@@ -1,0 +1,210 @@
+html
+{
+    scroll-behavior: smooth;
+}
+*
+{
+    padding: 0; margin: 0;
+}
+.link
+{
+    color: #eb9e34;
+    font-family: 'Dancing Script', cursive;
+    font-size:25px;
+}
+body
+{
+    background-color:#01002a;
+}
+.flex-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#C57ED3;
+}
+.navbar {
+    height: 80px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    z-index: 100;
+    transition: background-color 1s ease 0s;
+}
+.navbar-default .navbar-brand {
+    margin-top: 10px;
+    color: black;
+}
+.navbar-default .navbar-brand:hover {
+    color: black;
+    border: 1px solid #C57ED3;
+}
+.navbar-default .navbar-nav > li > a {
+    color: black;
+    margin: 10px 5px 5px 5px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+    color: #C57ED3;
+    border: 1px solid #C57ED3;
+}
+.navbar-default .navbar-nav > li > a:visited {
+    color: #C57ED3;
+    text-decoration: none;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    color: #C57ED3;
+}
+.navbar-default .navbar-toggle {
+    border-color: #C57ED3;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #490D40;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    color: #C57ED3;
+    background-color: #C57ED3;
+}
+.navbar-default .navbar-collapse.collapse.in ul {
+    background-color: #490D40;
+}
+/* Solid class attached on scroll past first section */
+.navbar.solid {
+    background-color: #490D40;
+    transition: background-color 1s ease 0s;
+    box-shadow: 0 0 4px grey;
+}
+.navbar.solid .navbar-brand {
+    color: #C57ED3;
+    transition: color 1s ease 0s;
+}
+.navbar.solid .navbar-nav > li > a {
+    color: #C57ED3;
+    transition: color 1s ease 0s;
+}
+.navigation
+{
+    display: flex;
+}
+.navigation a
+{
+    display: block;
+    padding: 1em;
+}
+.navigation a:hover
+{
+    background: #c5b8ff;
+}
+@media all and (max-width: 990px)
+{
+    .flex-container
+    {
+        flex-direction: column;
+    }
+    .logo
+    {
+        margin: 0;
+    }
+    .navigation
+    {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+@media all and (max-width: 600px) {
+    .logo
+    {
+        margin: .25em 0;
+        align-self: center;
+    }
+    .navigation {
+        flex-direction: column;
+    }
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+    }
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.bgImage{
+
+    width: 100%;
+    height: 100vh;
+}
+.line
+{
+    display:inline;
+}
+.flipCardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+.avtarImg{
+    width: 100%;
+    height: 300px;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+#card1{
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    color: white;
+    transform: rotateY(180deg);
+}
+#card2{
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    color: white;
+    transform: rotateY(180deg);
+}
+#card3{
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    color: black;
+    transform: rotateY(180deg);
+}
+#card4{
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+    color: white;
+    transform: rotateY(180deg);
+}
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color:#01002a;
+    font-weight: 800;
+    color: #eb9e34;
+}

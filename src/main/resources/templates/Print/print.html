@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link th:rel="stylesheet" th:href="@{/css/style.css}">
+    <title> 𝐈𝐦𝐚𝐠𝐞 𝐇𝐨𝐬𝐭𝐞𝐫 </title>
+    <link rel="shortcut icon" th:href="@{/image/icon.png}">
+</head>
+<main>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#"><div><img th:src="@{/image/pic3.png}" class="img"></div></a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a th:href="@{/users/upload}"><span class="link" >Upload&ensp;</span> </a></li>
+                    <li><a th:href="@{/users/logout}"><span class="link">Logout</span> </a></li>
+                    <li> <span >&emsp;&emsp;&emsp;&emsp;</span> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</main>
+<body th:style="'background-image:url(' + @{/image/im.jpg} + '); background-repeat: no-repeat, repeat; background-size: cover;'">
+<section>
+    <br>
+    <main class="grid">
+
+        <post th:each="i : ${images}">
+            <article style="color: #ffc107">
+                <div>
+                    <img class="image" th:src="'data:image/jpeg;base64,'+${i.imageFile}" alt="Avatar" id="avtarImg"/>
+                </div>
+                <div class="text">
+                    <i>Title:&ensp;</i><span th:text="${i.title}"></span><br>
+                    <i>Tags:&ensp; </i> <span th:text="${i.tags}"></span><br>
+                    <i>Description:&ensp;</i><span th:text="${i.description}"></span><br>
+                    <i>Posted On:&ensp;</i><span th:text="${i.date}"></span><br>
+                    <br>
+                    <span>
+                        <form class="ashu" th:action="@{/editpost(postId=${i.id})}" th:method="post">
+                            <input  class="link" type="submit" style="background:transparent; border: none;" value="EDIT"/>
+                        </form>
+                    </span>
+                    &emsp;
+                    <span>
+                        <form class="ashu" th:action="@{/deletepost(postId=${i.id})}" th:method="delete">
+                            <input class="link" type="submit" style="background:transparent;border: none;" value="DELETE" />
+                        </form>
+                    </span>
+                </div>
+            </article>
+        </post>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script th:src="@{/js/style.js}"></script>
+</section>
+</body>
+</html>
