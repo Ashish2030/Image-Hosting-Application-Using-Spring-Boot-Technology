@@ -15,6 +15,7 @@
 <img src="https://img.shields.io/github/issues-pr/ashish2030/Image-Hosting-Application?style=flat-square" alt="Scribbler-Project"/>
 </a>
   </p>
+  
 <p align="center"><img src="https://github.com/Ashish2030/Image-Hosting-Application/blob/master/video/video.gif" ></p>
 <p align="center">
     <a href="https://image-hoster-ashish.herokuapp.com/" target="blank">View Demo</a>
