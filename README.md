@@ -4,16 +4,16 @@
 
 
 <p align="center">
-  <img src="https://img.shields.io/github/forks/ashish2030/Swagger?style=flat-square" alt="Swagger forks"/>
+  <img src="https://img.shields.io/github/forks/ashish2030/Image-Hosting-Applicationr?style=flat-square" alt="Image-Hosting-Application forks"/>
 </a>
 <a href="https://github.com/ashish2030/Swagger/stargazers" target="blank">
-<img src="https://img.shields.io/github/stars/ashish2030/Swagger?style=flat-square" alt="Swagger"/>
+<img src="https://img.shields.io/github/stars/ashish2030/Image-Hosting-Application?style=flat-square" alt="Image-Hosting-Application"/>
 </a>
 <a href="https://github.com/ashish2030/Swagger/issues" target="blank">
-<img src="https://img.shields.io/github/issues/ashish2030/Swagger?style=flat-square" alt="Swagger"/>
+<img src="https://img.shields.io/github/issues/ashish2030/Image-Hosting-Application?style=flat-square" alt="Image-Hosting-Application"/>
 </a>
 <a href="https://github.com/ashish2030/Swagger/pulls" target="blank">
-<img src="https://img.shields.io/github/issues-pr/ashish2030/Swagger?style=flat-square" alt="Swagger"/>
+<img src="https://img.shields.io/github/issues-pr/ashish2030/Image-Hosting-Application?style=flat-square" alt="Image-Hosting-Application"/>
 </a>
   </p>
   
