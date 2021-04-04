@@ -17,7 +17,7 @@
   </p>
 <p align="center"><img src="https://github.com/Ashish2030/Scribbler-Project/blob/master/video/video.gif" ></p>
 <p align="center">
-    <a href="https://github.com/Ashish2030/Scribbler-Project" target="blank">View Demo</a>
+    <a href="https://image-hoster-ashish.herokuapp.com/" target="blank">View Demo</a>
     ·
     <a href="https://github.com/ashish2030/Scribbler-Project/issues/new/choose">Report Bug</a>
     ·
