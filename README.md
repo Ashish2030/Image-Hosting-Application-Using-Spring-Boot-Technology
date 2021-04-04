@@ -4,7 +4,7 @@
 
 
 <p align="center">
-  <img src="https://img.shields.io/github/forks/ashish2030/Image-Hosting-Applicationr?style=flat-square" alt="Image-Hosting-Application forks"/>
+   <img src="https://img.shields.io/github/forks/ashish2030/Image-Hosting-Application?style=flat-square" alt="Swagger forks"/>
 </a>
 <a href="https://github.com/ashish2030/Swagger/stargazers" target="blank">
 <img src="https://img.shields.io/github/stars/ashish2030/Image-Hosting-Application?style=flat-square" alt="Image-Hosting-Application"/>
