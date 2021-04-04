@@ -2,17 +2,18 @@
 <p align="center">:octocat:🌟 ᴛʜɪꜱ ɪꜱ ᴍʏ ɪᴍᴀɢᴇ ʜᴏꜱᴛɪɴɢ ᴀᴘᴘʟɪᴄᴀᴛɪᴏɴ ᴡʜᴇʀᴇ ʏᴏᴜ ᴄᴀɴ ᴜᴘʟᴏᴀᴅ ʏᴏᴜʀ ᴘɪᴄᴛᴜʀᴇꜱ ꜱᴀꜰᴇʟʏ 💻 🎯🚀 <p><br>
 <a href="https://github.com/ashish2030/Image-Hosting-Application/fork" target="blank">
 
+
 <p align="center">
-  <img src="https://img.shields.io/github/forks/ashish2030/Image-Hosting-Application?style=flat-square" alt="Scribbler-Project forks"/>
+  <img src="https://img.shields.io/github/forks/ashish2030/Swagger?style=flat-square" alt="Swagger forks"/>
 </a>
-<a href="https://github.com/ashish2030/Scribbler-Project/stargazers" target="blank">
-<img src="https://img.shields.io/github/stars/ashish2030/Image-Hosting-Application?style=flat-square" alt="Scribbler-Project"/>
+<a href="https://github.com/ashish2030/Swagger/stargazers" target="blank">
+<img src="https://img.shields.io/github/stars/ashish2030/Swagger?style=flat-square" alt="Swagger"/>
 </a>
-<a href="https://github.com/ashish2030/Scribbler-Project/issues" target="blank">
-<img src="https://img.shields.io/github/issues/ashish2030/Image-Hosting-Application?style=flat-square" alt="Scribbler-Project"/>
+<a href="https://github.com/ashish2030/Swagger/issues" target="blank">
+<img src="https://img.shields.io/github/issues/ashish2030/Swagger?style=flat-square" alt="Swagger"/>
 </a>
-<a href="https://github.com/ashish2030/Scribbler-Project/pulls" target="blank">
-<img src="https://img.shields.io/github/issues-pr/ashish2030/Image-Hosting-Application?style=flat-square" alt="Scribbler-Project"/>
+<a href="https://github.com/ashish2030/Swagger/pulls" target="blank">
+<img src="https://img.shields.io/github/issues-pr/ashish2030/Swagger?style=flat-square" alt="Swagger"/>
 </a>
   </p>
   
