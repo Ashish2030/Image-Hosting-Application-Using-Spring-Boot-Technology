@@ -1,7 +1,8 @@
+ [![GitHub last commit](https://img.shields.io/github/last-commit/ashish2030/Image-Hosting-Application)](https://github.com/ashish2030/Image-Hosting-Application/commits/master)
+[![GitHub repo size](https://img.shields.io/github/repo-size/ashish2030/Image-Hosting-Application)](https://github.com/ashish2030/Image-Hosting-Application/archive/master.zip)
  <h1 align="center"> 𝐈𝐦𝐚𝐠𝐞-𝐇𝐨𝐬𝐭𝐞𝐫-𝐀𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧</h1>
  
-[![GitHub last commit](https://img.shields.io/github/last-commit/ashish2030/Image-Hosting-Application)](https://github.com/ashish2030/Image-Hosting-Application/commits/master)
-[![GitHub repo size](https://img.shields.io/github/repo-size/ashish2030/Image-Hosting-Application)](https://github.com/ashish2030/Image-Hosting-Application/archive/master.zip)
+
 <p align="center">:octocat:🌟 ᴛʜɪꜱ ɪꜱ ᴍʏ ɪᴍᴀɢᴇ ʜᴏꜱᴛɪɴɢ ᴀᴘᴘʟɪᴄᴀᴛɪᴏɴ ᴡʜᴇʀᴇ ʏᴏᴜ ᴄᴀɴ ᴜᴘʟᴏᴀᴅ ʏᴏᴜʀ ᴘɪᴄᴛᴜʀᴇꜱ ꜱᴀꜰᴇʟʏ 💻 🎯🚀 <p><br>
 
 
