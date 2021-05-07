@@ -17,7 +17,9 @@
 </a>
 </p>
   
-<p align="center"><img src="https://github.com/Ashish2030/Image-Hosting-Application/blob/master/video/video.gif" ></p>
+https://user-images.githubusercontent.com/61516051/117404816-39e82580-af28-11eb-8165-a6ad8d4fe428.mp4
+
+
 <p align="center">
     <a href="https://image-hoster-ashish.herokuapp.com/" target="blank">View Demo</a>
     ·
