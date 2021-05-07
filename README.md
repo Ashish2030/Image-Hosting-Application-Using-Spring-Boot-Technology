@@ -16,6 +16,10 @@
 <img src="https://img.shields.io/github/issues-pr/ashish2030/Image-Hosting-Application?style=flat-square" alt="Image-Hosting-Application"/>
 </a>
 </p>
+
+
+[![GitHub last commit](https://img.shields.io/github/last-commit/ashish2030/Image-Hosting-Application)](https://github.com/ashish2030/Image-Hosting-Application/commits/master)
+[![GitHub repo size](https://img.shields.io/github/repo-size/ashish2030/Image-Hosting-Application)](https://github.com/ashish2030/Image-Hosting-Application/archive/master.zip)
   
 https://user-images.githubusercontent.com/61516051/117404816-39e82580-af28-11eb-8165-a6ad8d4fe428.mp4
 
