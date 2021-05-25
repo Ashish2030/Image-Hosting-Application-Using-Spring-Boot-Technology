@@ -1,7 +1,7 @@
 
  <h1 align="center"> 𝐈𝐦𝐚𝐠𝐞-𝐇𝐨𝐬𝐭𝐞𝐫-𝐀𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧</h1>
 
-<p align="center">:octocat:🌟 ᴛʜɪꜱ ɪꜱ ᴍʏ ɪᴍᴀɢᴇ ʜᴏꜱᴛɪɴɢ ᴀᴘᴘʟɪᴄᴀᴛɪᴏɴ ᴡʜᴇʀᴇ ʏᴏᴜ ᴄᴀɴ ᴜᴘʟᴏᴀᴅ ʏᴏᴜʀ ᴘɪᴄᴛᴜʀᴇꜱ ꜱᴀꜰᴇʟʏ 💻 🎯🚀 <p><br>
+<p align="center">:octocat:🌟 ᴛʜɪꜱ ɪꜱ ᴍʏ ɪᴍᴀɢᴇ ʜᴏꜱᴛɪɴɢ ᴀᴘᴘʟɪᴄᴀᴛɪᴏɴ ᴡʜᴇʀᴇ ʏᴏᴜ ᴄᴀɴ ᴜᴘʟᴏᴀᴅ ʏᴏᴜʀ ᴘɪᴄᴛᴜʀᴇꜱ ꜱᴀꜰᴇqʟʏ 💻 🎯🚀 <p><br>
  <p align="center">
  <a href="https://github.com/ashish2030/Image-Hosting-Application/fork" target="blank">
  <img src="https://img.shields.io/github/forks/ashish2030/Image-Hosting-Application?style=flat-square" alt="Swagger forks"/>
